@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="IMAGEM FLEXIVEL">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudios em HTML5.</p>
+    <h3>Veigh - Novo Balanço</h3>
+    <!-- <audio src="midia/veigh_novobalanco.mp3" controls autoplay loop></audio> -->
+    <!--FORMATOS ACEITOS MPEG, WEBM, OGG DOIS PRIMEIROS MAIS USADOS-->
+    <audio preload="metadata" controls>
+        <source src="midia/veigh_novobalanco.mp3" type="audio/mpeg">
+        <source src="midia/veigh_novobalanco.webm" type="audio/webm">
+        <source src="midia/veigh_novobalanco.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir este áudio. <a href="midia/veigh_novobalanco.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="imagens/capa_barco.jpg" controls loop>
+        <source src="videos/pexels_braco.mkv" type="video/mkv">
+        <source src="videos/pexels_barco.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade para vídeos.</p>
+        <a href="videos/pexels_barco.mp4" type="video/mp4">Clique aqui para fazer o download do vídeo</a>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h3jebyHaDrY?si=3-u1A7xycNEBWK6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/303380455?h=1362ec1d01&autoplay=1&loop=1&color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(36, 35, 35);
+}
+h1{
+    font-family: Arial Black, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-family: Calibri, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Helvetica, sans-serif;
+}
