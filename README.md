@@ -1,4 +1,4 @@
 # html-css
- Curso HTML5 e CSS3 (Curso em Video)
+Curso HTML5 e CSS3 (Curso em Video)
 
-Aprendendo a criar sites e agora estou gerenciando meus repositórios, executando Commit e Push.
+Desenvolvendo sites, gerenciando repositórios e executando funcionalidades de Commit e Push.
