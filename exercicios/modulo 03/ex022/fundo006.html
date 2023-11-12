@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /* mantém a imagem totalmente preenchida, porém de forma achatada. Servindo para alguns casos como este em específico */
+
+            position: relative; /* position padrão, não sendo necessário colocar no código */
+            height: 96vh; /* tira o scroll lateral da página, trazendo uma melhor responsividade */
+            background-color: purple;
+            padding: 10px; /* Neste caso, ótimo para visualizar as imagens sobrepondo umas as outras */
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            height: 200px;
+            width: 700px;
+            background-color: yellow;
+
+            position: absolute; /* sobrepõe a imagem no (position: relative) */
+            left: 50%; /* mantém a imagem centralizada, com referência no background-image: relative */
+            top: 50%; /* mantém a imagem centralizada, com referência no background-image: relative */
+            transform: translate(-50%, -50%); /* configura a imagem tanto verticalmente, quanto horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
