@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
+            margin-bottom: 100px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        body > h1 {
+            font-variant: small-caps;
+            background-image: linear-gradient(to top right, black, lightgoldenrodyellow);
+            color: white;
+            padding: 50px;
         }
         
         table {
@@ -15,6 +29,8 @@
             border-collapse: collapse;
             margin: auto;
             border: 2px solid black;
+            margin-bottom: 35px;
+            margin-top: 35px;
         }
 
         th {
@@ -40,6 +56,20 @@
 
         .posicao {
             font-weight: bold;
+        }
+
+        footer p > a {
+            text-decoration: none;
+            text-align: left;
+            padding: 8px;
+            background-color: black;
+            color: lightgoldenrodyellow;
+            border-radius: 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: lightblue;
         }
     </style>
 </head>
@@ -206,5 +236,10 @@
             </tr>
         </tfoot>
     </table>
+        <footer>
+            <p>
+                <a href="tabela001.html">Acesse a tabela anterior</a>
+            </p>
+        </footer>
 </body>
 </html>
