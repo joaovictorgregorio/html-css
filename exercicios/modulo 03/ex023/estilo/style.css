@@ -1,1 +1,57 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top right, lightblue, pink);
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    border: 5px solid black;
+}
+
+caption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    background-image: linear-gradient(to bottom left, blue, pink);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+tr.homens {
+    background-color: lightblue;
+}
+
+tr.mulheres {
+    background-color: pink;
+}
