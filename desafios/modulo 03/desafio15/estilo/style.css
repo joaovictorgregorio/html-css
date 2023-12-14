@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+table {
+    border: 3px solid black;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+th, tr {
+    border: 1px solid black;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    padding: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th.destaque {
+    background-color: gray;
+    color: white;
+}
+
+tr.notas > td {
+    background-color: black;
+    color: pink;
+    border: 1px solid pink;
+    font-variant: small-caps;
+}
+
+th.media {
+    text-align: left;
+    background-color: gray;
+    color: white;
+}
