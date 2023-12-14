@@ -10,17 +10,23 @@ body {
 }
 
 table {
-    border: 3px solid black;
+    border: 1px solid black;
     margin: auto;
     border-collapse: collapse;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 caption {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.5em;
-    margin: 15px 0px;
-    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 5px 0px 15px 0px;
+    font-variant: small-caps;
+    background-image: linear-gradient(to top left, black, white);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 
 th, tr {
@@ -49,8 +55,8 @@ tr.notas > td {
     font-variant: small-caps;
 }
 
-th.media {
-    text-align: left;
+td.media {
+    text-align: center;
     background-color: gray;
     color: white;
 }

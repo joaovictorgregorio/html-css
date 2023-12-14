@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,24 @@
     <link rel="shortcut icon" href="imagens/vscode-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
+
 <body>
     <table>
         <caption>
             Tabela de médias
         </caption>
         <thead>
-            <th rowspan="2" class="destaque">Área</th>
-            <th rowspan="2" class="destaque">Disciplinas</th>
-            <th colspan="2" class="destaque">Notas</th>
-            <th rowspan="2" class="destaque">Média</th>
+            <th rowspan="2" class="destaque" scope="col">Área</th>
+            <th rowspan="2" class="destaque" scope="col">Disciplinas</th>
+            <th colspan="2" class="destaque" scope="colgroup">Notas</th>
+            <th rowspan="2" class="destaque" scope="col">Média</th>
             <tr class="notas">
                 <td>Nota1</td>
                 <td>Nota2</td>
             </tr>
         </thead>
         <tbody>
-            <th rowspan="5">Exatas</th>
+            <th rowspan="5" scope="rowgroup">Exatas</th>
                 <tr>
                     <td>Matemática</td>
                     <td>0.0</td>
@@ -48,9 +50,11 @@
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
-                <th colspan="4" class="media">Média de Exatas</th>
-                <td>0.0</td>
-                <th rowspan="2">Humanas</th>
+                <tr>
+                    <td colspan="4" class="media">Média de Exatas</td>
+                    <td class="media">0.0</td>
+                </tr>
+                <th rowspan="3" scope="rowgroup">Humanas</th>
                 <tr>
                     <td>História</td>
                     <td>0.0</td>
@@ -62,6 +66,10 @@
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="media">Média de Humanas</td>
+                    <td class="media">0.0</td>
                 </tr>
         </tbody>
         <tfoot>
