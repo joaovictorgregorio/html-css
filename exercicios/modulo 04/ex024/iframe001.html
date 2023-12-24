@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            height: 450px;
+            width: 450px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
+        <!-- Tamanho padrão 300x150 do <iframe> -->
         Acessando meu projeto Android
-        <iframe src="https://joaovictorgregorio.github.io/projeto-android/" frameborder="0"></iframe>
+        <iframe src="https://joaovictorgregorio.github.io/projeto-android/" frameborder="0" scolling="no">\
+            <a href="https://cursoemvideo.com"></a>
+            <!-- scolling = nos testes do Guanabara o Google Chrome ainda possibilita a rolagem pelo scroll, já pelo Mac a rolagem foi bloqueada de forma correta, conforme a ideia deste parâmetro -->
+        </iframe>
         para visualização dentro da página Web
     </p>
     <p>
-        O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal!
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+
+        também é legal.
     </p>
 </body>
 </html>
