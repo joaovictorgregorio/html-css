@@ -13,9 +13,11 @@
 <body>
     <h1 style="text-align: center;">My first form</h1>
     <hr style="border: 1.5px solid black; padding: 2px;">
-        <form>
-            <p>Nome: <input type="text" name="nome" id="nome" style="border: 2px solid pink;"></p>
-            <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome" style="border: 2px dashed purple;"></p>
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" style="border: 2px solid pink;"></p>
+
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" style="border: 2px dashed purple;"></p>
+
             <p><input type="submit" value="Enviar" style="border-radius: 5px; border: 2px solid blue;"></p>
         </form>
     </hr>
