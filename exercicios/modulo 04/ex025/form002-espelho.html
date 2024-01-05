@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+         * {
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+         }
+
+         h1 {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 5px;
+         }
+
+         form > p > input {
+            border: 1px solid blue;
+         }
+
+         input {
+            padding: 8px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Formulário testando novas configurações</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!-- POST usado pq contém senha no FORM -->
+        <p>
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="20" size="10" placeholder="seu nome completo" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="minimo 8 caracteres" size="12" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
