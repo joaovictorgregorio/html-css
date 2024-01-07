@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Espelho</title>
 </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            background: #80008034;
+            margin: auto;
+            margin-top: 100px;
+            width: 1000px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 1px 4px 0px black;
+        }
+
+        h1 {
+            background: darkblue;
+            color: white;
+            text-shadow: 3px 1px 20px black;
+            width: 700px;
+            margin: 50px 0px 50px 50px;
+            border: 10px solid rgb(128, 0, 128);
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        label {
+            margin: 50px 0px 50px 50px;
+            font: lighter 1.2em 'Impact';
+            letter-spacing: 1.5px;
+        }
+
+        input {
+            width: 600px;
+            font: normal 1.2em 'Arial';
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: inset 0px 1px 6px 0px black;
+        }
+
+        ::placeholder {
+            font: normal 1em 'Arial';
+            letter-spacing: 1px;
+        }
+
+        input#ihora {
+            margin-bottom: 20px
+        }
+
+        input#botao {
+            width: 100px;
+            margin: 30px 100px 30px 200px;
+        }
+    </style>
 <body>
-    
+    <main>
+        <h1>Criando Formulário espelho sozinho</h1>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Seu nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" required placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="iletivo">Período Letivo:</label>
+            <input type="month" name="letivo" id="iletivo" value="2024-02" re>
+        </p>
+        <p>
+            <label for="idia">Dia da Prova:</label>
+            <input type="date" name="dia" id="idia" value="2024-01-07" required>
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova:</label>
+            <input type="time" name="hora" id="ihora" value="00:00">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" id="botao">
+            <input type="reset" value="Limpar" id="botao">
+        </p>
+    </main>
 </body>
 </html>
