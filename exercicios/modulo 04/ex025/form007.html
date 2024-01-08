@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Select, Datalist e Textarea</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando select, datalist e textarea</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Vamos descobrir</legend>
+
+            <div>
+                <label for="iestado">Estado</label>
+                <select name="estado" id="iestado">
+
+                    <option value="" selected>------- Escolha -------</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="AC">AC</option>
+                        <option value="AM">AM</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="RJ">RJ</option>
+                        <option value="GO">GO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PE">PE</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="iprofissao">Profissão:</label>
+                <input type="text" name="profissao" id="iprofissao" list="listaprofissao">
+                <datalist id="listaprofissao">
+                    <option>Administrador</option>
+                    <option>Engenheiro de Software</option>
+                    <option>Engenheiro Mecânixo</option>
+                    <option>Professor</option>
+                    <option>Programador</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="imensagem">Mensagem: <br></label>
+                <textarea name="mensagem" id="imensagem" cols="50" rows="10" placeholder="digite sua mensagem aqui"></textarea>
+            </div>
+
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
