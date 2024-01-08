@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Checkbox e Radio</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando formulário com checkbox e radio</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <label for="masculino"><input type="radio" name="sexo" id="masculino" checked value="M">Masculino</label>
+                <label for="feminino"><input type="radio" name="sexo" id="feminino" value="F">Feminino</label>
+                
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <label for="futebol"><input type="checkbox" name="esportefutebol" id="futebol" checked>Futebol <br></label>
+                <label for="basquete"><input type="checkbox" name="esportebasquete" id="basquete">Basquete <br></label>
+                <label for="natacao"><input type="checkbox" name="esportenatacao" id="natacao">Natação <br></label>
+                <label for="tenis"><input type="checkbox" name="esportetenis" id="tenis">Tênis <br></label>
+                <label for="volei"><input type="checkbox" name="esportevolei" id="volei">Vôlei</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
